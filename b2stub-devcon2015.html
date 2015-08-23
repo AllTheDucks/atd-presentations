@@ -8,17 +8,46 @@
 
 <section class="title-slide">
     <!-- This is the first slide -->
-    <h1>All the Ducks B2 Template</h1>
+    <h1>All the Ducks' B2 Template</h1>
     <footer>by <a href="https://www.alltheducks.com/about-us.html">Shane Argo and Wiley Fuller</a></footer>
 </section>
 
 <section>
   <h3>What we're going to cover today</h3>
     <ul>
-      <li>Common issues in Building Block construction</li>
-      <li>How we address these issues in our building blocks</li>
-      <li>Writing a building block from the <a href="https://github.com/AllTheDucks/atd-b2-stub">ATD B2 Stub</a>.</li>
+      <li>Why are we here?</li>
+      <li>Setting up for today's workshop.</li>
+      <li>Common issues in Building Block construction.</li>
+      <li>How we address these issues in our building blocks.</li>
+      <li>Writing a building block starting with the <a href="https://github.com/AllTheDucks/atd-b2-stub">ATD B2 Stub</a>.</li>
     </ul>
+</section>
+
+<section>
+  <h3>Why are we here?</h3>
+  <p>We're going to do a demo. Starting from scratch, to deploying a building block
+    with Configuration and settings page, Stripes (MVC), Spring Beans (Dependency Injection),
+    Language Pack, Security Entitlements, and a Bb Course Tool.</p>
+  <p>Don't worry about following along on your computer right now, this is just to show you
+    how quickly it can be done.</p>
+  <p>Other things like schema.xml, course event listeners and rendering hooks can be added
+    by simply uncommenting some stuff.</p>
+</section>
+
+<section>
+  <blockquote class="nonquote">&lt;&lt;Insert mind-blowing demo here&gt;&gt;</blockquote>
+</section>
+
+<section>
+  <h3>Setting up - USB Drives</h3>
+  <ul>
+    <li>Vagrant Installer</li>
+    <li>Bb Vagrant Image</li>
+    <li>JDK</li>
+    <li>ATD B2 Stub Project</li>
+    <li>IDEA (trial)</li>
+    <li>Sublime (trial)</li>
+  </ul>
 </section>
 
 <section>
@@ -28,58 +57,351 @@
     <li>Bootstrapping, versioning, and config management</li>
     <li>Separating Presentation logic from business logic</li>
     <li>Configuration</li>
-    <li>Database Management (schema.xml)
+    <li>Database Management (schema.xml)</li>
     <li>Scheduled tasks</li>
     <li>Testing</li>
+    <li>Language Packs / l10n</li>
   </ul>
 </section>
 
 <section>
-    <h3>An incremental list</h3>
-    <ul class="incremental">
-      <li>Item 1
-      <li>Item 2
-      <li>Item 3
-        <ul class="incremental">
-          <li> Item 3.1
-          <li> Item 3.2
-        </ul>
-    </ul>
-    <div role="note">Some notes. They are only visible using onstage shell.</div>
+  <h3>Development Environment</h3>
+  <ul>
+    <li>Operating System</li>
+    <li>Build Tool</li>
+    <li>IDE/Editor</li>
+    <li>Version Control</li>
+    <li>Collaboration</li>
+    <li>Blackboard Development Tools</li>
+  </ul>
 </section>
 
 <section>
-  <blockquote>
-    Who's brave enough to fly into something we all keep calling a death sphere?
-  </blockquote>
-  <details>
-    <p>In the onstage shell, notes scroll rather than overflow:</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac dui eu est feugiat lacinia sit amet nec leo. Mauris eu ipsum leo. Nulla mi odio, cursus sed sollicitudin non, fringilla id magna. Suspendisse sit amet posuere elit. Maecenas iaculis, turpis a placerat imperdiet, libero lorem feugiat nisi, nec tincidunt diam nibh sit amet massa. Vestibulum quis adipiscing tellus. Maecenas sollicitudin sodales pulvinar. Donec dui ipsum, bibendum facilisis consequat interdum, tempus ut mauris. Aliquam ut dolor nec odio scelerisque bibendum quis in neque. Aliquam dui dui, pulvinar quis fermentum quis, gravida eu augue. Nunc tristique dolor a urna pulvinar bibendum. Curabitur mollis cursus neque, in scelerisque metus porta non. Donec tempor enim in nibh vestibulum et convallis nisi malesuada. Duis ut lectus sed metus venenatis porttitor id pharetra quam. Suspendisse sapien turpis, ornare in molestie et, gravida eget turpis.
-    </p>
-  </details>
+  <h3>Operating System</h3>
+  <ul>
+    <li>Windows</li>
+    <li class="preferred">Linux</li>
+    <li class="preferred">OSX</li>
+    <li>???</li>
+  </ul>
 </section>
 
 <section>
-    <h2>Part two</h2>
+  <h3>Build Tool</h3>
+  <ul>
+    <li class="preferred">Gradle :)</li>
+    <li>Maven</li>
+    <li>Ivy</li>
+    <li>ANT :(</li>
+    <li class="disliked">IDE Build :'(</li>
+  </ul>
 </section>
 
 <section>
-    <figure> <!-- Figures are used to display images and videos fullpage -->
-      <img src="http://placekitten.com/g/800/600">
-      <figcaption>An image</figcaption>
-    </figure>
-    <div role="note">Kittens are so cute!</div>
+  <h3>IDE</h3>
+  <ul>
+    <li class="preferred">IntelliJ IDEA</li>
+    <li>Netbeans</li>
+    <li class="disliked">Eclipse :(</li>
+    <li class="preferred">Sublime Text</li>
+    <li>Atom</li>
+    <li>Notepad++</li>
+    <li>Vim/Emacs</li>
+    <li>Notepad</li>
+    <li>echo "my code" > Example.java</li>
+  </ul>
+  <p>If you are using Gradle, it's nice to have an IDE that supports it. (IDEA, Netbeans, Eclipse?)</p>
 </section>
 
 <section>
-    <figure> <!-- Videos are automatically played -->
-      <video src="http://videos-cdn.mozilla.net/brand/Mozilla_Firefox_Manifesto_v0.2_640.webm" poster="http://www.mozilla.org/images/about/poster.jpg"></video>
-      <figcaption>A video</figcaption>
-    </figure>
+  <h3>Version Control</h3>
+  <ul>
+    <li class="preferred">Git</li>
+    <li>SVN</li>
+    <li class="disliked">Team Foundation Server / Visual SourceSafe</li>
+  </ul>
 </section>
 
 <section>
-    <h2>End!</h2>
+  <h3>Collaboration</h3>
+  <ul>
+    <li>Slack</li>
+    <li>Chrome Remote Desktop</li>
+    <li>Hangouts</li>
+    <li>Optus Unlimited Phone Plan</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Blackboard Development Tools</h3>
+  <ul>
+    <li>Virtual Box</li>
+    <li>Vagrant</li>
+    <li>Bb Development Image</li>
+    <li>Starting Block / B2Deploy (Ant deploy task - works in Gradle)</li>
+    <li>pgAdmin</li>
+    <li>SSH - grep / less / tail</li>
+  </ul>
+</section>
+
+<section>
+  <blockquote class="nonquote">Let's wash this little pig.</blockquote>
+</section>
+
+<section>
+  <h3>1. Clone the stub.</h3>
+  <ol>
+    <li>Create a project directory</li>
+    <li>git clone https://github.com/AllTheDucks/atd-b2-stub <project-name></li>
+    <li>Change into project directory</li>
+    <li>./gradlew initb2 (not in Gradle daemon mode)</li>
+  </ol>
+</section>
+
+<section>
+  <h3>2. Test deploy.</h3>
+  <ol>
+    <li>./gradlew deployb2</li>
+  	<li>Login to Blackboard, check the settings page works.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>2. Create MVC Controller (Stripes action).</h3>
+  <p class="path">src/main/java/com/alltheducks/enabler/stripes/EnablerAction.java</p>
+  <pre><code class="java">
+package com.alltheducks.enabler.stripes;
+
+import net.sourceforge.stripes.action.*;
+import com.alltheducks.bb.stripes.BlackboardActionBeanContext;
+
+
+@EntitlementRestrictions(entitlements = &quot;atd.enabler.admin.MODIFY&quot;, errorPage = &quot;error.jsp&quot;)
+public class EnablerAction extends ActionBean {
+
+	private BlackboardActionBeanContext context;
+
+	@DefaultHandler
+	public Resolution displayEnabler() {
+		return new ForwardResolution("/WEB-INF/jsp/enabler.jsp");
+	}
+
+	public ActionBeanContext getContext() {
+        return context;
+    }
+
+    public void setContext(ActionBeanContext context) {
+        this.context = (BlackboardActionBeanContext)context;
+    }
+
+}
+  </code></pre>
+</section>
+
+<section>
+  <h3>3. Create MVC View (JSP).</h3>
+  <p class="path">src/main/webapp/WEB-INF/jsp/enabler.jsp</p>
+  <pre><code class="xml">
+&lt;!DOCTYPE html&gt;
+
+&lt;%@ taglib uri=&quot;/bbNG&quot; prefix=&quot;bbNG&quot; %&gt;
+&lt;%@ taglib prefix=&quot;stripes&quot; uri=&quot;http://stripes.sourceforge.net/stripes.tld&quot; %&gt;
+&lt;%@ taglib uri=&quot;http://java.sun.com/jsp/jstl/fmt&quot; prefix=&quot;fmt&quot; %&gt;
+
+&lt;fmt:message var=&quot;courseStepTitle&quot; key=&quot;enabler-app.enabler.courseStep.title&quot; /&gt;
+&lt;fmt:message var=&quot;batchUidLabel&quot; key=&quot;enabler-app.enabler.courseStep.batchUid.label&quot; /&gt;
+
+&lt;bbNG:genericPage bodyClass=&quot;normalBackground&quot;
+                  navItem=&quot;atd-enabler-app-nav-enabler&quot;&gt;
+
+    &lt;stripes:form beanclass=&quot;com.alltheducks.enabler.stripes.EnablerAction&quot;&gt;
+        &lt;input type=&quot;hidden&quot; name=&quot;displayCourseStatus&quot;/&gt;
+
+        &lt;bbNG:dataCollection&gt;
+            &lt;bbNG:step title=&quot;${courseStepTitle}&quot;&gt;
+                &lt;bbNG:dataElement isRequired=&quot;true&quot; label=&quot;${batchUidLabel}&quot;&gt;
+                    &lt;stripes:text name=&quot;batchUid&quot;&gt;&lt;/stripes:text&gt;
+                    &lt;stripes:errors field=&quot;courseId&quot;&gt;&lt;/stripes:errors&gt;
+                &lt;/bbNG:dataElement&gt;
+            &lt;/bbNG:step&gt;
+            &lt;bbNG:stepSubmit /&gt;
+        &lt;/bbNG:dataCollection&gt;
+    &lt;/stripes:form&gt;
+
+&lt;/bbNG:genericPage&gt;
+  </code></pre>
+</section>
+
+<section>
+  <h3>4. Define Language Pack Keys.</h3>
+  <p class="path">src/webapp/WEB-INF/bundles/bb-manifest-en_GB.properties</p>
+  <p>Add these keys:</p>
+  <pre><code>
+enabler-app.enabler.courseStep.title=Select Course
+enabler-app.enabler.courseStep.batchUid.label=Batch Uid
+  </code></pre>
+</section>
+
+<section>
+  <h3>5. Register the tool.</h3>
+  <p class="path">src/webapp/WEB-INF/bb-manifest.xml</p>
+  <p>In the "enabler-app" application:</p>
+  <pre><code class="xml">
+&lt;link&gt;
+    &lt;type value=&quot;course_tool&quot;/&gt;
+    &lt;name value=&quot;plugin.link.enabler.name&quot;/&gt;
+    &lt;url value=&quot;Tool.action&quot;/&gt;
+    &lt;handle value=&quot;enabler&quot;/&gt;
+    &lt;description
+            value=&quot;plugin.link.enabler.description&quot;/&gt;
+    &lt;entitlement-uid value=&quot;atd.enabler.admin.MODIFY&quot; /&gt;
+&lt;/link&gt;
+  </code></pre>
+</section>
+
+<section>
+  <h3>6. Test deploy, again.</h3>
+  <ol>
+    <li>./gradlew deployb2</li>
+  	<li>Login to Blackboard, naviage to System Admin.</li>
+  	<li>Look for "Course Enabler" tool.</li>
+  </ol>
+</section>
+
+<section>
+  <blockquote class="nonquote">Now to read the status of the course.</blockquote>
+</section>
+
+<section>
+  <h3>7. Add another view (JSP) for the status...</h3>
+  <p class="path">src/main/webapp/WEB-INF/jsp/status.jsp</p>
+  <pre><code class="xml">
+&lt;!DOCTYPE html&gt;
+
+&lt;%@ taglib uri=&quot;/bbNG&quot; prefix=&quot;bbNG&quot; %&gt;
+&lt;%@ taglib prefix=&quot;stripes&quot; uri=&quot;http://stripes.sourceforge.net/stripes.tld&quot; %&gt;
+&lt;%@ taglib uri=&quot;http://java.sun.com/jsp/jstl/fmt&quot; prefix=&quot;fmt&quot; %&gt;
+
+&lt;fmt:message var=&quot;statusTitle&quot; key=&quot;enabler-app.enabler.statusStep.title&quot; /&gt;
+&lt;fmt:message var=&quot;statusLabel&quot; key=&quot;enabler-app.enabler.statusStep.status.label&quot; /&gt;
+&lt;fmt:message var=&quot;batchUidLabel&quot; key=&quot;enabler-app.enabler.statusStep.batchUid.label&quot; /&gt;
+&lt;fmt:message var=&quot;courseNameLabel&quot; key=&quot;enabler-app.enabler.statusStep.courseName.label&quot; /&gt;
+
+&lt;bbNG:genericPage bodyClass=&quot;normalBackground&quot;
+                  navItem=&quot;atd-enabler-app-nav-enabler&quot;&gt;
+
+    &lt;stripes:form beanclass=&quot;com.alltheducks.enabler.stripes.EnablerAction&quot;&gt;
+        &lt;!-- Don&#39;t
+        use stripes:hidden here, otherwise stripes looks for the bean field with that name. --&gt;
+        &lt;input type=&quot;hidden&quot; name=&quot;setStatus&quot;/&gt;
+
+        &lt;bbNG:dataCollection&gt;
+            &lt;bbNG:step title=&quot;${statusTitle}&quot;&gt;
+                &lt;bbNG:dataElement label=&quot;${courseNameLabel}&quot;&gt;
+                    ${actionBean.courseName}
+                &lt;/bbNG:dataElement&gt;
+                &lt;bbNG:dataElement label=&quot;${batchUidLabel}&quot;&gt;
+                    ${actionBean.batchUid}
+                &lt;/bbNG:dataElement&gt;
+                &lt;bbNG:dataElement isRequired=&quot;true&quot; label=&quot;${statusLabel}&quot;&gt;
+                    &lt;stripes:checkbox name=&quot;courseEnabled&quot;&gt;&lt;/stripes:checkbox&gt;
+                &lt;/bbNG:dataElement&gt;
+            &lt;/bbNG:step&gt;
+            &lt;bbNG:stepSubmit /&gt;
+        &lt;/bbNG:dataCollection&gt;
+    &lt;/stripes:form&gt;
+
+&lt;/bbNG:genericPage&gt;
+  </code></pre>
+</section>
+
+<section>
+  <h3>8. ... and update the controller.</h3>
+  <p class="path">src/main/java/com/alltheducks/enabler/stripes/EnablerAction.java</p>
+  <pre><code class="java">
+package com.alltheducks.enabler.stripes;
+
+import blackboard.admin.data.IAdminObject;
+import blackboard.admin.data.course.CourseSite;
+import blackboard.admin.persist.course.CourseSiteLoader;
+import blackboard.admin.persist.course.impl.CourseSiteDbLoader;
+import blackboard.persist.PersistenceException;
+import com.alltheducks.bb.stripes.EntitlementRestrictions;
+import net.sourceforge.stripes.action.*;
+import com.alltheducks.bb.stripes.BlackboardActionBeanContext;
+
+
+@EntitlementRestrictions(entitlements = &quot;atd.enabler.admin.MODIFY&quot;, errorPage = &quot;error.jsp&quot;)
+public class EnablerAction implements ActionBean {
+
+    private BlackboardActionBeanContext context;
+
+    private boolean courseEnabled;
+    private String batchUid;
+    private String courseName;
+
+    @DefaultHandler
+    public Resolution displayEnabler() {
+        return new ForwardResolution(&quot;/WEB-INF/jsp/enabler.jsp&quot;);
+    }
+
+    public Resolution displayCourseStatus() throws PersistenceException {
+        CourseSiteLoader courseLoader = CourseSiteDbLoader.Default.getInstance();
+
+        CourseSite cs = courseLoader.load(batchUid);
+        IAdminObject.RowStatus status = cs.getRowStatus();
+        courseEnabled = status.equals(IAdminObject.RowStatus.ENABLED);
+        courseName = cs.getTitle();
+
+        return new ForwardResolution(&quot;/WEB-INF/jsp/status.jsp&quot;);
+    }
+
+    public boolean isCourseEnabled() {
+        return courseEnabled;
+    }
+
+    public void setCourseEnabled(boolean courseEnabled) {
+        this.courseEnabled = courseEnabled;
+    }
+
+    public String getBatchUid() {
+        return batchUid;
+    }
+
+    public void setBatchUid(String batchUid) {
+        this.batchUid = batchUid;
+    }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public ActionBeanContext getContext() {
+        return context;
+    }
+
+    public void setContext(ActionBeanContext context) {
+        this.context = (BlackboardActionBeanContext)context;
+    }
+
+}
+  </code></pre>
+</section>
+
+<section>
+  <h3>9. And, dont forget the new language pack keys.</h3>
+  <p class="path">src/webapp/WEB-INF/bundles/bb-manifest-en_GB.properties</p>
+  <p>Add these keys:</p>
+  <pre><code>
+enabler-app.enabler.statusStep.title=Course Status
+enabler-app.enabler.statusStep.status.label=Enabled
+enabler-app.enabler.statusStep.batchUid.label=Batch Uid
+enabler-app.enabler.statusStep.courseName.label=Course Name
+  </code></pre>
 </section>
 
 <!-- Your Style -->
@@ -117,7 +439,7 @@
     font-size: 80px;
   }
   h3 {
-    margin: 20px 0 50px 50px
+    margin: 40px 0 50px 50px
   }
 
   ul {
@@ -187,7 +509,7 @@
 
     background-image: url("images/image6.png");
     background-size: cover;
-  
+
   }
   .view section {
     -moz-transition: none;
@@ -232,7 +554,7 @@
     background-image: url("images/image5.png");
     background-size: cover;
     color:white;
-} 
+}
 .title-slide footer {
   color: #333;
 }
@@ -253,6 +575,10 @@
 -->
 
 <div id="progress-bar"></div>
+
+<link rel="stylesheet" href="highlight/styles/default.css">
+<script src="highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 <!-- Default Style -->
 <style>
@@ -316,6 +642,54 @@
   }
   .view #progress-bar {
     display: none;
+  }
+</style>
+
+<style>
+  .preferred {
+    color: #009900;
+    font-weight: bold;
+  }
+  .disliked {
+    color :#990000;
+  }
+
+  p {
+    font-size: 25px;
+    margin: 30px 50px;
+  }
+
+  .nonquote {
+    text-align: center;
+    padding-top: 200px;
+  }
+  .nonquote::before {
+    content: none;
+  }
+  .nonquote::after {
+    content: none;
+  }
+
+  ol {
+    margin: 75px;
+    list-style: lower-alpha inside;
+  }
+  ol > li {
+    margin: 10px 0;
+  }
+
+  code {
+    font-size: 12px;
+    margin: 10px 50px;
+  }
+
+  .hljs {
+    background: none;
+  }
+
+  .path {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 </style>
 
@@ -646,7 +1020,7 @@
       requestFullscreen.apply(html);
     }
   }
-  
+
   Dz.setProgress = function(aIdx, aStep) {
     var slide = $("section:nth-of-type("+ aIdx +")");
     if (!slide)
@@ -656,14 +1030,14 @@
         stepSize = slideSize / steps;
     this.progressBar.style.width = ((aIdx - 1) * slideSize + aStep * stepSize) + '%';
   }
-  
+
   Dz.postMsg = function(aWin, aMsg) { // [arg0, [arg1...]]
     aMsg = [aMsg];
     for (var i = 2; i < arguments.length; i++)
       aMsg.push(encodeURIComponent(arguments[i]));
     aWin.postMessage(aMsg.join(" "), "*");
   }
-  
+
   function init() {
     Dz.init();
     window.onkeydown = Dz.onkeydown.bind(Dz);
@@ -681,7 +1055,7 @@
     Function.prototype.bind = function (oThis) {
 
       // closest thing possible to the ECMAScript 5 internal IsCallable
-      // function 
+      // function
       if (typeof this !== "function")
       throw new TypeError(
         "Function.prototype.bind - what is trying to be fBound is not callable"
